@@ -4,8 +4,9 @@ project(pcd_reader)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(PCL 1.12 REQUIRED COMPONENTS common io)
-find_package(PCL 1.12 REQUIRED COMPONENTS common io filters)
+# find_package(PCL 1.12 REQUIRED COMPONENTS common io)
+# find_package(PCL 1.12 REQUIRED COMPONENTS common io filters)
+find_package(PCL 1.12 REQUIRED COMPONENTS common io filters segmentation)
 
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
